@@ -1,11 +1,10 @@
-export function Greetings() {
+export function Greetings(props) {
     return (
-        <>
-            <ul>
-                <li>Hello</li>
-                <li>World!</li>
-                <li>How ya?</li>
-            </ul>
-        </>
+        <div>
+            Hello {props.firstName} {props.lastName}!
+            You are now {props.age} years old.
+            {props.jsxProp}
+            {props.children}
+        </div>
     )
 }
